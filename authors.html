@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authors - DC Bookstore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          📚 <span class="visually-hidden">DC Bookstore logo</span>DC BOOKSTORE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link active" href="authors.html" aria-current="page">Authors</a></li>
+            <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+            <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">
+                <span aria-hidden="true">🛒</span>
+                <span class="visually-hidden">Shopping cart</span>
+                <span id="cartCount" class="cart-badge" style="display:none;" aria-live="polite">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" style="padding:80px 0;">
+      <div class="container text-center">
+        <h1>Featured Local Authors</h1>
+        <p class="lead">Meet the talented writers of Washington, DC</p>
+      </div>
+    </section>
+
+    <section class="container my-5" aria-labelledby="authors-heading">
+      <h2 id="authors-heading" class="visually-hidden">Author profiles</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card author-card h-100">
+            <img src="https://images.pexels.com/photos/3760852/pexels-photo-3760852.jpeg?auto=compress&cs=tinysrgb&w=400&h=280&fit=crop"
+                 class="card-img-top" alt="Jane Doe, fiction writer from Washington DC">
+            <div class="card-body">
+              <h5 class="card-title">Jane Doe</h5>
+              <p class="text-muted mb-3">Fiction Writer</p>
+              <p class="card-text">DC-based novelist known for compelling narratives about life in the nation's capital.</p>
+              <p class="fw-bold mt-3 mb-2">Notable Works:</p>
+              <ul class="mb-3">
+                <li>Capital Dreams (2024)</li>
+                <li>The Washington Chronicles (2023)</li>
+              </ul>
+              <a href="store.html" class="btn btn-primary w-100">View Books</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card author-card h-100">
+            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400&h=280&fit=crop"
+                 class="card-img-top" alt="Robert Smith, historical fiction author">
+            <div class="card-body">
+              <h5 class="card-title">Robert Smith</h5>
+              <p class="text-muted mb-3">Historical Fiction</p>
+              <p class="card-text">Brings DC history to life through meticulously researched fiction.</p>
+              <p class="fw-bold mt-3 mb-2">Notable Works:</p>
+              <ul class="mb-3">
+                <li>Monuments &amp; Stories (2025)</li>
+                <li>The Lincoln Papers (2022)</li>
+              </ul>
+              <a href="store.html" class="btn btn-primary w-100">View Books</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card author-card h-100">
+            <img src="https://images.pexels.com/photos/3760853/pexels-photo-3760853.jpeg?auto=compress&cs=tinysrgb&w=400&h=280&fit=crop"
+                 class="card-img-top" alt="Maria Garcia, poet and short story writer">
+            <div class="card-body">
+              <h5 class="card-title">Maria Garcia</h5>
+              <p class="text-muted mb-3">Poetry &amp; Short Stories</p>
+              <p class="card-text">Lyrical prose captures the essence of the Potomac region.</p>
+              <p class="fw-bold mt-3 mb-2">Notable Works:</p>
+              <ul class="mb-3">
+                <li>Potomac Tales (2025)</li>
+                <li>Voices of the Capital (2023)</li>
+              </ul>
+              <a href="store.html" class="btn btn-primary w-100">View Books</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card author-card h-100">
+            <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400&h=280&fit=crop"
+                 class="card-img-top" alt="Thomas Lee, mystery and thriller writer">
+            <div class="card-body">
+              <h5 class="card-title">Thomas Lee</h5>
+              <p class="text-muted mb-3">Mystery &amp; Thriller</p>
+              <p class="card-text">Crafts gripping mysteries set in Washington's corridors of power.</p>
+              <p class="fw-bold mt-3 mb-2">Notable Works:</p>
+              <ul class="mb-3">
+                <li>DC Mysteries (2025)</li>
+                <li>The Georgetown Affair (2024)</li>
+              </ul>
+              <a href="store.html" class="btn btn-primary w-100">View Books</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card author-card h-100">
+            <img src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=400&h=280&fit=crop"
+                 class="card-img-top" alt="Sarah Johnson, non-fiction and memoir writer">
+            <div class="card-body">
+              <h5 class="card-title">Sarah Johnson</h5>
+              <p class="text-muted mb-3">Non-Fiction &amp; Memoir</p>
+              <p class="card-text">Powerful memoirs explore experiences growing up in DC's diverse neighborhoods.</p>
+              <p class="fw-bold mt-3 mb-2">Notable Works:</p>
+              <ul class="mb-3">
+                <li>Growing Up DC (2024)</li>
+                <li>Neighborhood Stories (2022)</li>
+              </ul>
+              <a href="store.html" class="btn btn-primary w-100">View Books</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card author-card h-100">
+            <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400&h=280&fit=crop"
+                 class="card-img-top" alt="David Chen, science fiction author">
+            <div class="card-body">
+              <h5 class="card-title">David Chen</h5>
+              <p class="text-muted mb-3">Science Fiction</p>
+              <p class="card-text">Imagines DC's future in speculative fiction novels.</p>
+              <p class="fw-bold mt-3 mb-2">Notable Works:</p>
+              <ul class="mb-3">
+                <li>Capital 2100 (2025)</li>
+                <li>The Digital District (2023)</li>
+              </ul>
+              <a href="store.html" class="btn btn-primary w-100">View Books</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5" aria-labelledby="local-author-cta-heading">
+      <div class="card p-5 text-center" style="background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);color:white;border-radius:1.5rem;">
+        <h3 id="local-author-cta-heading" class="fw-bold mb-3">Are You a Local Author?</h3>
+        <p class="lead mb-4">We'd love to feature your work at DC Bookstore!</p>
+        <a href="mailto:authors@dcbookstore.com" class="btn btn-outline-light btn-lg">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="fw-bold mb-2">&copy; 2025 DC Bookstore. All rights reserved.</p>
+      <p class="mb-0">
+        Washington, DC | (202) 555-0123 |
+        <a href="mailto:info@dcbookstore.com" class="text-decoration-none text-light">info@dcbookstore.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/js/main.js"></script>
+</body>
+</html>

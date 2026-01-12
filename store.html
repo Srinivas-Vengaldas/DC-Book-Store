@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store - DC Bookstore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">📚 DC BOOKSTORE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="authors.html">Authors</a></li>
+          <li class="nav-item"><a class="nav-link active" href="store.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">
+              🛒 <span id="cartCount" class="cart-badge" style="display:none;">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section" style="padding:80px 0;">
+    <div class="container text-center">
+      <h1>Our Bookstore</h1>
+      <p class="lead">Browse, Order & Choose Pickup or Delivery</p>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="mb-4 fw-bold">Available Books</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card book-card h-100">
+          <img src="https://images.pexels.com/photos/1290141/pexels-photo-1290141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" class="card-img-top" alt="Capital Dreams book cover">  <div class="card-body">
+            <h5 class="card-title">Capital Dreams</h5>
+            <p class="text-muted mb-1">By Jane Doe</p>
+            <p class="text-muted mb-2"><small>Fiction</small></p>
+            <h6 class="text-primary fw-bold mb-3">$24.99</h6>
+            <button class="btn btn-primary btn-sm w-100" onclick="addToCart('book1','Capital Dreams',24.99)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3">
+        <div class="card book-card h-100">
+          <img src="https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" class="card-img-top" alt="Monuments & Stories book cover"><div class="card-body">
+            <h5 class="card-title">Monuments & Stories</h5>
+            <p class="text-muted mb-1">By Robert Smith</p>
+            <p class="text-muted mb-2"><small>Historical</small></p>
+            <h6 class="text-primary fw-bold mb-3">$19.99</h6>
+            <button class="btn btn-primary btn-sm w-100" onclick="addToCart('book2','Monuments & Stories',19.99)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card book-card h-100">
+          <img src="https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" class="card-img-top" alt="Potomac Tales book cover"><div class="card-body">
+            <h5 class="card-title">Potomac Tales</h5>
+            <p class="text-muted mb-1">By Maria Garcia</p>
+            <p class="text-muted mb-2"><small>Poetry</small></p>
+            <h6 class="text-primary fw-bold mb-3">$22.99</h6>
+            <button class="btn btn-primary btn-sm w-100" onclick="addToCart('book3','Potomac Tales',22.99)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card book-card h-100">
+          <img src="https://images.pexels.com/photos/1290141/pexels-photo-1290141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" class="card-img-top" alt="DC Mysteries book cover"><div class="card-body">
+            <h5 class="card-title">DC Mysteries</h5>
+            <p class="text-muted mb-1">By Thomas Lee</p>
+            <p class="text-muted mb-2"><small>Mystery</small></p>
+            <h6 class="text-primary fw-bold mb-3">$26.99</h6>
+            <button class="btn btn-primary btn-sm w-100" onclick="addToCart('book4','DC Mysteries',26.99)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card book-card h-100">
+          <img src="https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" class="card-img-top" alt="Growing Up DC book cover"><div class="card-body">
+            <h5 class="card-title">Growing Up DC</h5>
+            <p class="text-muted mb-1">By Sarah Johnson</p>
+            <p class="text-muted mb-2"><small>Memoir</small></p>
+            <h6 class="text-primary fw-bold mb-3">$21.99</h6>
+            <button class="btn btn-primary btn-sm w-100" onclick="addToCart('book5','Growing Up DC',21.99)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card book-card h-100">
+          <img src="https://images.pexels.com/photos/1290141/pexels-photo-1290141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" class="card-img-top" alt="Capital 2100 book cover"><div class="card-body">
+            <h5 class="card-title">Capital 2100</h5>
+            <p class="text-muted mb-1">By David Chen</p>
+            <p class="text-muted mb-2"><small>Sci-Fi</small></p>
+            <h6 class="text-primary fw-bold mb-3">$23.99</h6>
+            <button class="btn btn-primary btn-sm w-100" onclick="addToCart('book6','Capital 2100',23.99)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card book-card h-100">
+          <img src="https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" class="card-img-top" alt="The Lincoln Papers book cover"><div class="card-body">
+            <h5 class="card-title">The Lincoln Papers</h5>
+            <p class="text-muted mb-1">By Robert Smith</p>
+            <p class="text-muted mb-2"><small>History</small></p>
+            <h6 class="text-primary fw-bold mb-3">$28.99</h6>
+            <button class="btn btn-primary btn-sm w-100" onclick="addToCart('book7','The Lincoln Papers',28.99)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card book-card h-100">
+          <img src="https://images.pexels.com/photos/1290141/pexels-photo-1290141.jpeg?auto=compress&cs=tinysrgb&w=300&h=400&fit=crop" class="card-img-top" alt="The Georgetown Affair book cover"><div class="card-body">
+            <h5 class="card-title">Georgetown Affair</h5>
+            <p class="text-muted mb-1">By Thomas Lee</p>
+            <p class="text-muted mb-2"><small>Thriller</small></p>
+            <h6 class="text-primary fw-bold mb-3">$25.99</h6>
+            <button class="btn btn-primary btn-sm w-100" onclick="addToCart('book8','Georgetown Affair',25.99)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="mb-4 fw-bold">Place Your Order</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-4">
+          <form id="orderForm">
+            <div class="mb-3">
+              <label for="bookSelect" class="form-label">Select Book *</label>
+              <select class="form-select" id="bookSelect" required>
+                <option value="">Choose a book...</option>
+                <option value="Capital Dreams">Capital Dreams - $24.99</option>
+                <option value="Monuments & Stories">Monuments & Stories - $19.99</option>
+                <option value="Potomac Tales">Potomac Tales - $22.99</option>
+                <option value="DC Mysteries">DC Mysteries - $26.99</option>
+                <option value="Growing Up DC">Growing Up DC - $21.99</option>
+                <option value="Capital 2100">Capital 2100 - $23.99</option>
+                <option value="The Lincoln Papers">The Lincoln Papers - $28.99</option>
+                <option value="The Georgetown Affair">The Georgetown Affair - $25.99</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="quantity" class="form-label">Quantity *</label>
+              <input type="number" class="form-control" id="quantity" min="1" value="1" required>
+            </div>
+            <div class="mb-3">
+              <label for="deliveryType" class="form-label">Type *</label>
+              <select class="form-select" id="deliveryType" required>
+                <option value="pickup">Store Pickup</option>
+                <option value="delivery">Home Delivery</option>
+              </select>
+            </div>
+            <div id="deliveryFields" style="display:none;">
+              <div class="mb-3">
+                <label for="deliveryLocation" class="form-label">Address</label>
+                <input type="text" class="form-control" id="deliveryLocation" placeholder="Click map to set location">
+              </div>
+            </div>
+            <button type="button" id="storePlaceOrderBtn"
+                    class="btn btn-primary btn-lg w-100">
+              Place Order
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h5 id="mapInstructions" class="fw-bold mb-3">Store Location</h5>
+          <div id="map"></div>
+          <div class="mt-3">
+            <p class="fw-bold mb-1">Address:</p>
+            <p class="mb-2">
+              Duques Hall, 2201 G St NW<br>
+              Washington, DC 20052
+            </p>
+            <p class="fw-bold mb-1">Hours:</p>
+            <p class="mb-0">Mon-Sat: 9AM-8PM<br>Sunday: 11AM-6PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="fw-bold mb-2">&copy; 2025 DC Bookstore. All rights reserved.</p>
+      <p class="mb-0">Washington, DC | (202) 555-0123 | info@dcbookstore.com</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/js/main.js"></script>
+  <script src="js/js/store.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc_iseOQNFVSXsAdOjMfVCbAP6-Fv6TeM&callback=initMap" async defer></script>
+</body>
+</html>
