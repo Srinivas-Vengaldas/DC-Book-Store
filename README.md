@@ -1,25 +1,7 @@
 # DC-Book-Store
 <div align="center">
-  <br />
-  
-  <img src="https://via.placeholder.com/150?text=DC+Book+Store" alt="DC Book Store Logo" width="150"/>
-
-  <br />
-  <br />
-
-  <div>
-    <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="React" />
-    <img src="https://img.shields.io/badge/-Java-black?style=for-the-badge&logoColor=white&logo=openjdk&color=ED8B00" alt="Java" />
-    <img src="https://img.shields.io/badge/-Spring%20Boot-black?style=for-the-badge&logoColor=white&logo=springboot&color=6DB33F" alt="Spring Boot" />
-    <img src="https://img.shields.io/badge/-MySQL-black?style=for-the-badge&logoColor=white&logo=mysql&color=4479A1" alt="MySQL" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="Tailwind" />
-  </div>
-
-  <h1 align="center">DC Book Store</h1>
-
-  <p align="center">
-    A robust, full-stack e-commerce platform designed for book enthusiasts. <br/>
-    DC Book Store bridges the gap between classic reading and modern digital shopping experiences.
+  <p align="left">
+    A robust, front-end e-commerce platform designed for book enthusiasts.DC Book Store bridges the gap between classic reading and modern digital shopping experiences.
   </p>
 </div>
 
@@ -27,44 +9,27 @@
 
 ## 📌 Overview
 
-**DC Book Store** is a comprehensive e-commerce application that simulates a real-world online bookstore. It features a responsive frontend for browsing and purchasing books, coupled with a secure backend for inventory and order management. 
+**DC Book Store** is a comprehensive e-commerce application that simulates a real-world online bookstore. It features a responsive frontend for browsing and purchasing books. 
 
-Designed with scalability in mind, this project demonstrates the integration of a modern **React** user interface with a powerful **Java/SQL** backend infrastructure.
-
----
-
-## 👉 Demo / Screenshots
-
-![App Screenshot](https://via.placeholder.com/800x400?text=App+Screenshot+Here)
+Designed with scalability in mind, this project demonstrates the integration of a modern **Bootstrap** user interface with a infrastructure.
 
 ---
 
 ## 🌟 Features
 
 ### 📚 **Dynamic Catalog**
-Browse a vast collection of books with advanced filtering, categorization, and search capabilities powered by efficient SQL queries.
+Browse a vast collection of books with advanced filtering, categorization, and search capabilities powered by efficient queries.
 
 ### 🛒 **Seamless Shopping Experience**
-A fully functional shopping cart and checkout system. Users can add items, update quantities, and process orders instantly.
-
-### 🔐 **Secure Authentication**
-Robust user login and registration system ensuring that user data and order history are protected.
-
-### ⚡ **Admin Dashboard**
-(Optional: Include this if your app has it)
-Dedicated portal for administrators to add new books, update prices, and manage inventory stock in real-time.
+A fully functional prototype shopping cart and checkout system. Users can add items, update quantities, and process orders instantly.
 
 ### 📱 **Responsive Design**
-Built with Tailwind CSS to ensure a flawless experience across desktops, tablets, and mobile devices.
+Built with Bootstrap CSS to ensure a flawless experience across desktops, tablets, and mobile devices.
 
 ---
 
 ## 🏡 Architecture & Tech Stack
-
-1.  **Frontend**: React.js with Tailwind CSS for a fast, interactive UI.
-2.  **Backend**: Java (Spring Boot) RESTful API handling business logic.
-3.  **Database**: MySQL for persistent storage of user and product data.
-4.  **Tools**: Maven for build automation, Git for version control.
+ **Frontend**: HTML, Javascript with Bootstrap CSS for a fast, interactive UI.
 
 ---
 
@@ -76,6 +41,12 @@ Built with Tailwind CSS to ensure a flawless experience across desktops, tablets
 4. ⚙️ [Setup and Installation](#⚙️-setup-and-installation)
 5. 🚀 [How to Use](#🚀-how-to-use)
 6. 📜 [License](#📜-license)
+
+---
+
+## 👉 Demo
+
+https://github.com/user-attachments/assets/981a9222-ec5b-4e83-ad2b-89090f396f02
 
 ---
 
